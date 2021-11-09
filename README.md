@@ -1,5 +1,5 @@
 License:
-By the Bingo Author
+By @Computescience
 # Bingo
 Generate Bingo cards for Chinese characters
 HTML file is generated after inputting characters. It is better to convert html to pdf before printing to avoid format change.
