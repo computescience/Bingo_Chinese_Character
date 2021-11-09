@@ -16,9 +16,10 @@ class CardMaker(object):
  
        # Tweaked so that it will fit in 80 columns...
  #wordstring = 'add land shall glass wrap catch chapter bell spell step dress chest length shelf fill drink thick print since grip wrist doll cross block strong'
-  #words = ["神","爱","世","人","马","可","福","音","第",
+  #words example:
+    #words = ["爱","世","人","马","可","福","音","第",
           #"一","章","节","活","出","平","安","夜",
-         # "圣","善","照","着","母","亲","婴","儿"]
+         # "圣","善","照","着","亲","婴","儿"]
  #words = ["add" ,"land","shall","glass","wrap","catch","chapter"]
  wordstring = input('Enter words with space in between')
  bingosize = int (input('Enter row number of bingo'))
@@ -33,7 +34,7 @@ class CardMaker(object):
  elif bingo > len(input_words):
     print ('Enter', bingo-len(input_words), 'more words','or reduce row number of bingo to', int((bingosize)**(0.5)))
     words = [random_string(4) for i in range(bingo)]
-#     
+#  print the words to double check   
  print ('Words to play are', words)
  print ('Size of bingo is', bingosize)
  maxlen = max([len(w) for w in words])
@@ -62,7 +63,7 @@ class CardMaker(object):
 def make_one_webpage():
     make_card = CardMaker()
     #people = ["John", "Jane", "Sally", "Mark"]
-
+# the save path need to be changed
     with open("C:\\Users\\Michael\\Documents\\python\\Bingo\\bingo_1.htm", "w") as f:
      bingo_number = int(input('Enter bingo game numbers you want to play'))
 
